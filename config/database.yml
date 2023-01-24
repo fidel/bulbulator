@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: bulbulator_production
-  username: bulbulator
-  password: <%= ENV["BULBULATOR_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
