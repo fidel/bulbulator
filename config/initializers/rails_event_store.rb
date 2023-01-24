@@ -10,6 +10,8 @@ Rails.configuration.to_prepare do
     config.default_event_store = Rails.configuration.event_store
   end
 
+  OopsIDidItAgain = Class.new(RailsEventStore::Event)
+
   # Subscribe event handlers below
   Rails.configuration.event_store.tap do |store|
     # store.subscribe(InvoiceReadModel.new, to: [InvoicePrinted])
