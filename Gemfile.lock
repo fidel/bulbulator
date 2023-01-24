@@ -1,3 +1,30 @@
+GIT
+  remote: https://github.com/RailsEventStore/rails_event_store.git
+  revision: b7edb48eb43b935b6026aa9609baa7b7cf9a038b
+  ref: b7edb48eb43b935b6026aa9609baa7b7cf9a038b
+  specs:
+    aggregate_root (2.8.1)
+      ruby_event_store (= 2.8.1)
+    rails_event_store (2.8.1)
+      activejob (>= 6.0)
+      activemodel (>= 6.0)
+      activesupport (>= 6.0)
+      aggregate_root (= 2.8.1)
+      arkency-command_bus (>= 0.4)
+      rails_event_store_active_record (= 2.8.1)
+      ruby_event_store (= 2.8.1)
+      ruby_event_store-browser (= 2.8.1)
+    rails_event_store_active_record (2.8.1)
+      ruby_event_store-active_record (= 2.8.1)
+    ruby_event_store (2.8.1)
+      concurrent-ruby (~> 1.0, >= 1.1.6)
+    ruby_event_store-active_record (2.8.1)
+      activerecord (>= 6.0)
+      ruby_event_store (= 2.8.1)
+    ruby_event_store-browser (2.8.1)
+      rack
+      ruby_event_store (= 2.8.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -66,8 +93,6 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    aggregate_root (2.8.1)
-      ruby_event_store (= 2.8.1)
     arkency-command_bus (0.4.1)
       concurrent-ruby
     builder (3.2.4)
@@ -137,17 +162,6 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.4)
       loofah (~> 2.19, >= 2.19.1)
-    rails_event_store (2.8.1)
-      activejob (>= 6.0)
-      activemodel (>= 6.0)
-      activesupport (>= 6.0)
-      aggregate_root (= 2.8.1)
-      arkency-command_bus (>= 0.4)
-      rails_event_store_active_record (= 2.8.1)
-      ruby_event_store (= 2.8.1)
-      ruby_event_store-browser (= 2.8.1)
-    rails_event_store_active_record (2.8.1)
-      ruby_event_store-active_record (= 2.8.1)
     railties (7.0.4.1)
       actionpack (= 7.0.4.1)
       activesupport (= 7.0.4.1)
@@ -158,14 +172,6 @@ GEM
     rake (13.0.6)
     reline (0.3.2)
       io-console (~> 0.5)
-    ruby_event_store (2.8.1)
-      concurrent-ruby (~> 1.0, >= 1.1.6)
-    ruby_event_store-active_record (2.8.1)
-      activerecord (>= 6.0)
-      ruby_event_store (= 2.8.1)
-    ruby_event_store-browser (2.8.1)
-      rack
-      ruby_event_store (= 2.8.1)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -191,7 +197,7 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.1)
-  rails_event_store (~> 2.8.1)
+  rails_event_store (~> 2.8.1)!
   sprockets-rails
   tzinfo-data
 

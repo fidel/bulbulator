@@ -28,4 +28,4 @@ group :development do
   # gem "spring"
 end
 
-gem "rails_event_store", "~> 2.8.1"
+gem "rails_event_store", "~> 2.8.1", github: "RailsEventStore/rails_event_store", ref: "b7edb48eb43b935b6026aa9609baa7b7cf9a038b"
